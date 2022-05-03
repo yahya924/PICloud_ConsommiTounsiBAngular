@@ -1,0 +1,66 @@
+.react-section{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.comment-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    padding : 10px;
+    max-width: 45%;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.username{
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.comment-content-wrapper{
+    padding-left: 10px;
+}
+
+.comment-text{
+    text-indent: 15px;
+    font-size: 13.5px;
+}
+
+.like{
+    color : #2e7d32
+}
+
+.dislike{
+    color : rgba(145, 104, 51, 0.959);
+}
+
+.laugh{
+    color : rgb(255, 187, 0);
+}
+
+.angry{
+    color : rgb(193, 68, 43)
+}
+
+.sad{
+    color : rgb(28, 152, 174)
+}
+
+.react-wrapper{
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-wrapper:hover{
+    background-color: rgba(81, 81, 81, 0.18);
+    filter : saturate(120%);
+    fa-icon{
+        width: 90%;
+        height : 90%;
+    }
+}

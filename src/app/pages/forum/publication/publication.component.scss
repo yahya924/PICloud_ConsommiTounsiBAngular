@@ -1,0 +1,54 @@
+.publication-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    padding : 5px;
+    cursor: pointer;
+}
+
+.publication-wrapper:hover{
+    background-color: rgba(27, 27, 27, 0.114);
+}
+
+.pub-footer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+}
+
+.horizontal-line{
+    width: 50%;
+    color: rgb(0, 0, 0);
+    border: .5px solid rgba(0, 0, 0, 0.123);
+    outline: none
+}
+
+.pub-header{
+    column-gap: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.username{
+    font-size: medium;
+    font-weight: 600;
+}
+
+.title{
+    font-size: 22px;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vh;
+}
+
+.dislikes{
+    color : rgba(145, 65, 51, 0.959);
+}
+
+.likes{
+    color : #2e7d32
+}
