@@ -9,7 +9,7 @@
     flex-direction: column;
     row-gap: 2vh;
     padding : 10px;
-    max-width: 45%;
+    max-width: 70%;
     width: fit-content;
     border-radius: 10px;
 }
@@ -54,11 +54,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .react-wrapper:hover{
     background-color: rgba(81, 81, 81, 0.18);
-    filter : saturate(120%);
+    filter : brightness(120%);
     fa-icon{
         width: 90%;
         height : 90%;

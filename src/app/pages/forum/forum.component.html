@@ -1,3 +1,7 @@
 <div class="forum-wrapper">
-    <app-publication [routerLink]="'/forum/pub/'+item" *ngFor="let item of list"></app-publication>
+    <app-publication 
+        [routerLink]="'/forum/pub/'+item.idPub" 
+        *ngFor="let item of list"
+        [title]="item.title"
+        [description]="item.description"></app-publication>
 </div>

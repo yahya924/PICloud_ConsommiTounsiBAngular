@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { faThumbsUp, faThumbsDown, faFaceAngry, faFaceSadTear, faFaceLaugh } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -13,6 +13,9 @@ export class CommentComponent implements OnInit {
   angryIcon = faFaceAngry;
   laughIcon = faFaceLaugh;
   sadIcon = faFaceSadTear;
+
+  @Input() commentText !:string;
+  
 
   constructor() { }
 

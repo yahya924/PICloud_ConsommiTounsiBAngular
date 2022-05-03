@@ -13,7 +13,17 @@ export class ForumComponent implements OnInit {
   constructor(private publicationService : PublicationService) { }
 
   ngOnInit(): void {
-    this.list = this.publicationService.list;
+    this.publicationService.getAllPublications().subscribe({
+      next : (res : any) => {
+        this.list = res;
+        console.log(this.list)
+      },
+      error : (err : any) => {
+        console.log(err)
+      }
+    })
   }
+
+
 
 }

@@ -2,14 +2,10 @@
     <div class="publication card">    
         <div class="pub-detail-header">
             <div class="username">/user_name</div>
-            <div class="title">pub_title</div>
+            <div class="title">{{publication?.title | titlecase}}</div>
         </div>
         <div class="pub-detail-content">
-            mlekmkcemùakea,ml)mùe)l,ml; me;am l mù;eùm mù;zmùl)lù;e
-            l*l;)le;zl;e e le ; l);e l;e)l;ecl;eml; )l;e ;e )ml;)l;ezmùlùml;ee ù;ea;em;e ml; l
-            le;zl;e e le ; l);e l;e)l;ecl;eml; )l;e ;e )ml;)l;ezmùlùml;ee ù;ea;e
-            le;zl;e e le ; l);e l;e)l;ecl;eml; )l;e ;e )ml;)l;ezmùlùml;ee ù;ea;e
-            le;zl;e e le ; l);e l;e)l;ecl;eml; )l;e ;e )ml;)l;ezmùlùml;ee ù;ea;e
+            {{publication?.description}}
         </div>
         <hr class="horizontal-line">
         <div class="pub-detail-footer">
@@ -30,11 +26,17 @@
         </div>
     </div>
     <div class="comment-section">
+        <div class="add-comment">
+            <input [(ngModel)]="commentText" placeholder="Write a comment" class="form-control" type="text">
+            <button (click)="addComment()" class="btn btn-success">Post comment</button>
+        </div>
         <div class="comments-header">
             comments
         </div>
         <div class="comment-list">
-            <app-comment *ngFor="let comment of commentList"></app-comment>
+            <app-comment 
+                *ngFor="let comment of commentList"
+                [commentText]="comment.description" ></app-comment>
         </div>
     </div>
 </div>
