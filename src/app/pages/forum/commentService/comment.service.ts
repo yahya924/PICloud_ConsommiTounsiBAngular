@@ -12,4 +12,6 @@ export class CommentService {
       this.list.push(i);
     }
   }
+
+  
 }
